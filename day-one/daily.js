@@ -1,7 +1,5 @@
 'use strict'
 
-const myArr = [1, 2, 3, 4, 5];
-
 const map = (arr, pntr) => {
   const mapped = [];
   arr.forEach(itm => mapped.push(pntr(itm)));
