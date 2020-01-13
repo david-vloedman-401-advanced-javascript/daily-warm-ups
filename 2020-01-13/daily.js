@@ -14,8 +14,6 @@ const whileLoop = arr => {
   }
 };
 
-
-
 const map = (arr, pntr) => {
   const mapped = [];
   arr.forEach(itm => mapped.push(pntr(itm)));
@@ -38,4 +36,35 @@ const filter = (arr, pntr) => {
   });
   return filtered;
 };
+
+const people = ['Kookla', 'Fran', 'Ollie'];
+
+const stuff = {
+  tv: 'huge',
+  radio: 'old',
+  toothbrush: 'frayed',
+  cars: ['Toyota', 'Mazda']
+};
+
+let state = {};
+
+let newPeople = ['Odie', ...people, 'Garfield'];
+const newStuff = { ...stuff, cars: [...stuff.cars, 'Honda'] };
+
+let newState = {
+  people: ['Odie', ...people, 'Garfield'],
+  newStuff: { ...stuff, cars: [...stuff.cars, 'Ford'] }
+};
+
+console.log(newPeople);
+
+console.log(newStuff);
+
+console.log(newState);
+
+console.log(people);
+
+console.log(stuff);
+
+
 
