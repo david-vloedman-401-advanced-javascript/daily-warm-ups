@@ -1,5 +1,21 @@
 'use strict'
 
+const myArr = [1,2,3,4,5,6,7,8,9,10];
+
+const forLoop = arr => {
+  for (let i = 0; i < arr.length; i++) console.log(arr[i]);
+};
+
+const whileLoop = arr => {
+  let counter = 0;
+  while (counter < arr.length) {
+    console.log(arr[counter]);
+    counter++;
+  }
+};
+
+
+
 const map = (arr, pntr) => {
   const mapped = [];
   arr.forEach(itm => mapped.push(pntr(itm)));
@@ -22,3 +38,4 @@ const filter = (arr, pntr) => {
   });
   return filtered;
 };
+
